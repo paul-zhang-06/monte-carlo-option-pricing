@@ -1,0 +1,184 @@
+{
+  "validation": {
+    "n": 30,
+    "frac_inside_95ci": 0.9333333333333333,
+    "max_abs_z": 2.195478741818369,
+    "max_abs_error": 0.0491639634945793
+  },
+  "z_calibration": {
+    "mean": -0.04552672077129828,
+    "sd": 1.004462203783406,
+    "frac_outside_196": 0.04666666666666667
+  },
+  "variance_reduction": [
+    {
+      "case": "european call",
+      "method": "none",
+      "se_reduction_x": 1.0,
+      "efficiency_vs_plain": 1.0
+    },
+    {
+      "case": "european call",
+      "method": "antithetic",
+      "se_reduction_x": 1.4,
+      "efficiency_vs_plain": 5.97
+    },
+    {
+      "case": "european call",
+      "method": "control",
+      "se_reduction_x": 2.31,
+      "efficiency_vs_plain": 13.11
+    },
+    {
+      "case": "european call",
+      "method": "both",
+      "se_reduction_x": 4.63,
+      "efficiency_vs_plain": 63.58
+    },
+    {
+      "case": "asian call (arithmetic)",
+      "method": "none",
+      "se_reduction_x": 1.0,
+      "efficiency_vs_plain": 1.0
+    },
+    {
+      "case": "asian call (arithmetic)",
+      "method": "antithetic",
+      "se_reduction_x": 1.42,
+      "efficiency_vs_plain": 2.43
+    },
+    {
+      "case": "asian call (arithmetic)",
+      "method": "control",
+      "se_reduction_x": 62.52,
+      "efficiency_vs_plain": 3471.3
+    },
+    {
+      "case": "asian call (arithmetic)",
+      "method": "both",
+      "se_reduction_x": 60.66,
+      "efficiency_vs_plain": 3997.52
+    },
+    {
+      "case": "up-and-out call (H=115)",
+      "method": "none",
+      "se_reduction_x": 1.0,
+      "efficiency_vs_plain": 1.0
+    },
+    {
+      "case": "up-and-out call (H=115)",
+      "method": "antithetic",
+      "se_reduction_x": 1.16,
+      "efficiency_vs_plain": 2.77
+    },
+    {
+      "case": "american put",
+      "method": "none",
+      "se_reduction_x": 1.0,
+      "efficiency_vs_plain": 1.0
+    },
+    {
+      "case": "american put",
+      "method": "antithetic",
+      "se_reduction_x": 1.68,
+      "efficiency_vs_plain": 3.73
+    }
+  ],
+  "se_loglog_slope_plain": -0.49992977245617715,
+  "asian": [
+    {
+      "sigma": 0.1,
+      "european": 3.3523,
+      "asian_arithmetic": 1.8633,
+      "se_arith": 0.0,
+      "asian_geometric": 1.8397,
+      "geometric_closed_form": 1.8428,
+      "asian_over_european": 0.5558
+    },
+    {
+      "sigma": 0.2,
+      "european": 5.6607,
+      "asian_arithmetic": 3.211,
+      "se_arith": 0.0002,
+      "asian_geometric": 3.1329,
+      "geometric_closed_form": 3.1407,
+      "asian_over_european": 0.5672
+    },
+    {
+      "sigma": 0.3,
+      "european": 7.9996,
+      "asian_arithmetic": 4.5726,
+      "se_arith": 0.0004,
+      "asian_geometric": 4.4092,
+      "geometric_closed_form": 4.4217,
+      "asian_over_european": 0.5716
+    },
+    {
+      "sigma": 0.4,
+      "european": 10.3408,
+      "asian_arithmetic": 5.9359,
+      "se_arith": 0.0007,
+      "asian_geometric": 5.6559,
+      "geometric_closed_form": 5.6733,
+      "asian_over_european": 0.574
+    }
+  ],
+  "barrier_types": {
+    "max_abs_gap_mc_bgk": 0.01078284273061425,
+    "max_abs_gap_mc_continuous": 0.20099012819928852
+  },
+  "monitoring": [
+    {
+      "step_days": 4.0,
+      "mc": 1.2834,
+      "se": 0.0026,
+      "continuous": 0.9616,
+      "bgk": 1.3679
+    },
+    {
+      "step_days": 2.0,
+      "mc": 1.2092,
+      "se": 0.0025,
+      "continuous": 0.9616,
+      "bgk": 1.2519
+    },
+    {
+      "step_days": 1.0,
+      "mc": 1.1459,
+      "se": 0.0025,
+      "continuous": 0.9616,
+      "bgk": 1.1679
+    },
+    {
+      "step_days": 0.5,
+      "mc": 1.097,
+      "se": 0.0024,
+      "continuous": 0.9616,
+      "bgk": 1.1078
+    },
+    {
+      "step_days": 0.25,
+      "mc": 1.0564,
+      "se": 0.0024,
+      "continuous": 0.9616,
+      "bgk": 1.065
+    }
+  ],
+  "american": {
+    "max_abs_gap_vs_tree": 0.02263100520905237,
+    "mean_gap": -0.010185268622911853,
+    "max_premium": 3.017637977116408
+  },
+  "american_call_vs_european": {
+    "lsm": 10.41919902159217,
+    "se": 0.04605959848053339,
+    "bs": 10.450583572185565
+  },
+  "greeks_max_rel_err": 0.0038699071640247735,
+  "p_zero_payoff": {
+    "European call": 0.47114,
+    "Asian call": 0.46991,
+    "Up-and-out call": 0.618135,
+    "Up-and-in call": 0.853005
+  }
+}
